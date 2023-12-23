@@ -123,3 +123,64 @@ nav p{
     margin-left: .7rem;
     color: black;
 }
+
+/** About_Section **/
+
+.about_section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    align-items: center;
+    height: 96vh;
+}
+.about_section p{
+    color: rgba(0, 0, 0, 0.555);
+    text-align: center;
+}
+.about_section h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0rem 10rem;
+    gap: 3rem;
+}
+.dev_img2 img{
+    width: 380px;
+    height: auto;
+    border-radius: 50px;
+    filter: grayscale(1);
+}
+.details-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.details{
+    display: flex;
+    gap: 2rem;
+}
+.card{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    flex: 1;
+    border-radius: 30px;
+    gap: .5rem;
+}
+.card i{
+    font-size: 1.5rem;
+    color: black;
+}
+.card  .bold{
+    color: black;
+    font-weight: 600;
+}
+
