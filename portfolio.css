@@ -225,18 +225,13 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  cursor: pointer;
 }
 
 .btn-1,
 .btn-2 {
   border:1px solid rgb(53, 53, 53) ;
 }
-
-.btn-1:hover,
-.btn-2:hover {
-  cursor: pointer;
-}
-
 .btn-1,
 .btn-2:hover {
   background: rgb(53, 53, 53);
@@ -354,6 +349,7 @@ article .icon {
 
 #projects {
   position: relative;
+  height: 100%;
 }
 
 .color-container {
@@ -426,6 +422,9 @@ footer {
 
 footer p {
   text-align: center;
+}
+.blocked{
+  cursor: not-allowed;
 }
 #credit{
   color: rgba(0, 0, 0, 0.192);
