@@ -289,11 +289,6 @@ section {
   border-radius: 2rem;
 }
 
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
 
 .details-container {
   padding: 1.5rem;
@@ -431,4 +426,7 @@ footer {
 
 footer p {
   text-align: center;
+}
+#credit{
+  color: rgba(0, 0, 0, 0.192);
 }
