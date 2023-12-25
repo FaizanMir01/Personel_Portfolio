@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="portfolio.css" />
     <link rel="stylesheet" href="media.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Mir Faizan</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </ul>
       </div>
     </nav>
@@ -29,55 +30,38 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <a href="#about" onclick="toggleMenu()">About</a>
+          <a href="#experience" onclick="toggleMenu()">Experience</a>
+          <a href="#projects" onclick="toggleMenu()">Projects</a>
+          <a href="#contact" onclick="toggleMenu()">Contact</a>
         </div>
       </div>
     </nav>
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/faizan.jpg alt="John Doe profile picture" />
+      <div class="pic-container">
+        <img src="./assets/faizan.jpg" alt="dev image" />
       </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+      <div class="section-info">
+        <p class="section-info-p1">Hello, I'm</p>
+        <h1 class="title">Mir Faizan</h1>
+        <p class="section-info-p2">Frontend Developer</p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+          <a href="./assets/Resume.pdf"><button class="btn btn-2">Download CV</button></a>
+          <a href="#contact"><button class="btn btn-1">Contact Info</button></a>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
         </div>
       </div>
     </section>
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
+      <p class="section-info-p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
+        <div class="pic-container">
           <img
-            src="./assets/about-pic.png"
+            src="./assets/faizan.jpg"
             alt="Profile picture"
             class="about-pic"
           />
@@ -91,7 +75,7 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <p>5 months<br />Frontend Development</p>
             </div>
             <div class="details-container">
               <img
@@ -100,18 +84,17 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <p>B-tech<br />Computer Science</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              Student at Kalasalingam University | Front-End Developer | Cyber Security Enthusiast | Leader @OWASP STUDENT CHAPTER KARE |          
             </p>
+            <p>              👋 Hi, I’m Faizan Manzoor Mir, a 3rd-year B.Tech CSE student.
+              👀 I’m interested in Designing, Gaming, and Travelling.
+              🌱 I’m currently learning and exploring new aspects of computer science and technology.
+              💞️ I’m looking to collaborate on projects related to web design, or any exciting tech-related ventures.</p>
           </div>
         </div>
       </div>
@@ -123,7 +106,7 @@
       />
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
+      <p class="section-info-p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
@@ -159,8 +142,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
+                  <h3>Gsap</h3>
+                  <p>Basic</p>
                 </div>
               </article>
               <article>
@@ -181,7 +164,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>TypeScript</h3>
+                  <h3>React Js</h3>
                   <p>Basic</p>
                 </div>
               </article>
@@ -192,14 +175,14 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
+                  <h3>tailwind Css</h3>
+                  <p>Basic</p>
                 </div>
               </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Backend Development</h2>
             <div class="article-container">
               <article>
                 <img
@@ -208,7 +191,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>PostgreSQL</h3>
+                  <h3>Mongodb</h3>
                   <p>Basic</p>
                 </div>
               </article>
@@ -220,7 +203,7 @@
                 />
                 <div>
                   <h3>Node JS</h3>
-                  <p>Intermediate</p>
+                  <p>Basic</p>
                 </div>
               </article>
               <article>
@@ -231,7 +214,7 @@
                 />
                 <div>
                   <h3>Express JS</h3>
-                  <p>Intermediate</p>
+                  <p>Basic</p>
                 </div>
               </article>
               <article>
@@ -257,7 +240,7 @@
       />
     </section>
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
+      <p class="section-info-p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
@@ -272,13 +255,13 @@
             <h2 class="experience-sub-title project-title">Project One</h2>
             <div class="btn-container">
               <button
-                class="btn btn-color-2 project-btn"
+                class="btn btn-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
                 Github
               </button>
               <button
-                class="btn btn-color-2 project-btn"
+                class="btn btn-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
                 Live Demo
@@ -296,13 +279,13 @@
             <h2 class="experience-sub-title project-title">Project Two</h2>
             <div class="btn-container">
               <button
-                class="btn btn-color-2 project-btn"
+                class="btn btn-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
                 Github
               </button>
               <button
-                class="btn btn-color-2 project-btn"
+                class="btn btn-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
                 Live Demo
@@ -320,13 +303,13 @@
             <h2 class="experience-sub-title project-title">Project Three</h2>
             <div class="btn-container">
               <button
-                class="btn btn-color-2 project-btn"
+                class="btn btn-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
                 Github
               </button>
               <button
-                class="btn btn-color-2 project-btn"
+                class="btn btn-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
                 Live Demo
@@ -343,7 +326,7 @@
       />
     </section>
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
+      <p class="section-info-p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
@@ -352,7 +335,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mailto:faizanmeer322@gmail.com">faizanmeer322@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
