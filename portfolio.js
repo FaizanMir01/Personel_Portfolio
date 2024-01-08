@@ -7,7 +7,7 @@ function toggleMenu() {
   }
 function MouseFollower(){
   const cursor = document.querySelector(".cursor");
-const body = document.querySelector("body");
+const body = document.querySelector("#main");
 const logo = document.querySelector(".logo")
 
 body.addEventListener("mousemove",(dets)=>{
