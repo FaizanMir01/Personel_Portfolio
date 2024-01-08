@@ -432,6 +432,7 @@ footer p {
 #credit{
   color: rgba(0, 0, 0, 0.192);
 }
+/* MouseFoloower */
 .cursor{
   height: 10px;
   width: 10px;
@@ -440,6 +441,7 @@ footer p {
   position: fixed;
   z-index: 1;
 }
+/* ScrollIndicator */
 .scrollBar{
   height: 5px;
   width:0%;
@@ -449,3 +451,8 @@ footer p {
   top: 0;
   z-index: 999;
 }
+
+
+
+
+

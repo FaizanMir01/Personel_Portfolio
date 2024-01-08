@@ -7,6 +7,7 @@ function scrollbars(){
   scrollIndicator.style.width= scrollPercentage +"%";
 }
 window.addEventListener("scroll",scrollbars);
+
 function toggleMenu() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
