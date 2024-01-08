@@ -1,4 +1,12 @@
+const scrollIndicator= document.querySelector(".scrollBar");
 
+const totalScrollheight = document.body.scrollHeight - window.innerHeight;
+
+function scrollbars(){
+  const scrollPercentage = (window.scrollY /totalScrollheight)*100;
+  scrollIndicator.style.width= scrollPercentage +"%";
+}
+window.addEventListener("scroll",scrollbars);
 function toggleMenu() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
@@ -19,6 +27,8 @@ body.addEventListener("mousemove",(dets)=>{
 
 }
 MouseFollower();
+
+
 
 
 gsap.registerPlugin(ScrollTrigger);

@@ -435,13 +435,17 @@ footer p {
 .cursor{
   height: 10px;
   width: 10px;
-  border: 2px solid black;
+  background-color: crimson;
   border-radius: 50%;
   position: fixed;
   z-index: 1;
 }
-.grow{
-  transform: scale(10);
-  background-color: white;
-  mix-blend-mode: difference;
+.scrollBar{
+  height: 5px;
+  width:0%;
+  border-radius: 5px;
+  background-color:#585858;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
