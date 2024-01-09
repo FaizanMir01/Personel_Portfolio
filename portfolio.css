@@ -179,9 +179,9 @@ section {
 .pic-container img{
   border-radius: 50%;
 }
-.pic-container img:hover{
+/* .pic-container img:hover{
   box-shadow: 0px 0px 8px 4px rgb(201, 201, 201);
-}
+} */
 .section-info {
   align-self: center;
   text-align: center;
@@ -449,10 +449,29 @@ footer p {
   background-color:#585858;
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 99;
 }
 
-
-
+/*Loader */
+.loader{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.loader h1{
+  color:transparent;
+  font-size: 7rem;
+  text-transform: uppercase;
+  background: linear-gradient(to right, red,orange);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
 
 
