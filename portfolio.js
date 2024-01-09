@@ -30,13 +30,17 @@ body.addEventListener("mousemove",(dets)=>{
 MouseFollower();
 
 
-
-
 gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline()
+tl.from(".loader h1",{
+  y:200,
+  stagger:.5,
+  opacity:0
+})
 tl.from("nav",{
   y:-100,
   opacity:0,
+  delay:2,
   duration:1,
   stagger:0
 })
@@ -49,3 +53,12 @@ tl.from(".Anime2",{
   opacity:0,
   scale:0.5,
 })
+
+function Loader(){
+  const loader = document.querySelector(".loader");
+
+setTimeout(function(){
+  loader.style.top= "-100%"
+},3500)
+}
+Loader();

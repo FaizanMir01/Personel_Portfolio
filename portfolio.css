@@ -464,6 +464,7 @@ footer p {
   justify-content: center;
   align-items: center;
   gap: 5rem;
+  transition: all .4s linear;
 }
 .loader h1{
   color:transparent;
