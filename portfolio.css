@@ -470,9 +470,10 @@ footer p {
   color:transparent;
   font-size: 7rem;
   text-transform: uppercase;
-  background: linear-gradient(to right, red,orange);
+  background: linear-gradient(to right, rgb(255, 255, 255),rgb(204, 169, 74));
   background-clip: text;
   -webkit-background-clip: text;
-}
+  pointer-events: none;
 
+}
 

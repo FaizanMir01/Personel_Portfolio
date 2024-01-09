@@ -1,4 +1,14 @@
-const scrollIndicator= document.querySelector(".scrollBar");
+function Loader(){
+  const loader = document.querySelector(".loader");
+
+setTimeout(function(){
+  loader.style.top= "-100%"
+},3500)
+}
+Loader();
+
+function SCROLLBAR(){
+  const scrollIndicator= document.querySelector(".scrollBar");
 
 const totalScrollheight = document.body.scrollHeight - window.innerHeight;
 
@@ -7,7 +17,8 @@ function scrollbars(){
   scrollIndicator.style.width= scrollPercentage +"%";
 }
 window.addEventListener("scroll",scrollbars);
-
+}
+SCROLLBAR();
 function toggleMenu() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
@@ -29,7 +40,7 @@ body.addEventListener("mousemove",(dets)=>{
 }
 MouseFollower();
 
-
+// gsap
 gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline()
 tl.from(".loader h1",{
@@ -54,11 +65,7 @@ tl.from(".Anime2",{
   scale:0.5,
 })
 
-function Loader(){
-  const loader = document.querySelector(".loader");
-
-setTimeout(function(){
-  loader.style.top= "-100%"
-},3500)
-}
-Loader();
+window.onload = function() {
+  // Set the scroll position to the top of the page
+  window.scrollTo(0, 0);
+};
