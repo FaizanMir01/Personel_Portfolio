@@ -178,6 +178,7 @@ section {
 }
 .pic-container img{
   border-radius: 50%;
+  z-index: -1;
 }
 /* .pic-container img:hover{
   box-shadow: 0px 0px 8px 4px rgb(201, 201, 201);

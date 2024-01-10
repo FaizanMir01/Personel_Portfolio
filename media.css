@@ -10,6 +10,12 @@
     #projects {
       height: fit-content;
     }
+    .loader{
+      gap: 3rem;
+    }
+    .loader h1{
+      font-size: 4rem;
+    }
   }
   
   @media screen and (max-width: 1200px) {
@@ -46,8 +52,24 @@
     .about-containers {
       margin-top: 0;
     }
+    .loader{
+      gap: 3rem;
+    }
+    .loader h1{
+      font-size: 4rem;
+    }
+    
   }
+  @media screen and (max-width: 1024px) {
+    .loader{
+      gap: 3rem;
+      flex-direction: column;
+    }
+    .loader h1{
+      font-size: 4rem;
+    }
   
+  }
   @media screen and (max-width: 600px) {
     #contact,
     footer {
@@ -101,5 +123,12 @@
     }
     .text-container {
       text-align: justify;
+    }
+    .loader{
+      gap: 2rem;
+      flex-direction: column;
+    }
+    .loader h1{
+      font-size: 3rem;
     }
   }
