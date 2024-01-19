@@ -19,13 +19,7 @@
   }
   
   @media screen and (max-width: 1200px) {
-    #desktop-nav {
-      display: none;
-    }
-    #hamburger-nav {
-      display: flex;
 
-    }
     #experience,
     .experience-details-container {
       margin-top: 2rem;
@@ -60,16 +54,32 @@
     }
     
   }
-  @media screen and (max-width: 1024px) {
-    .loader{
-      gap: 3rem;
-      flex-direction: column;
-    }
-    .loader h1{
-      font-size: 4rem;
-    }
-  
+@media screen and (max-width:1024px) {
+      .ham-menu{
+          display: block;
+      }
+      .nav-links{
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 100px;
+          left: -100%;
+          background-color: blue;
+          width: 100%;
+          height: 100vh;
+          align-items: center;
+          gap: 1.5rem;
+          z-index: 1;
+      }
+      .nav-links a{
+          text-decoration: none;
+          color: rgb(0, 0, 0);
+          font-size: 1.2rem;
+          font-weight: 500;
+      }
+      
   }
+
   @media screen and (max-width: 600px) {
     #contact,
     footer {
@@ -97,18 +107,15 @@
     .contact-info-container p,
     .nav-links li a {
       font-size: 1rem;
-      
+    }
+    .nav-links2 li a {
+      font-size: 1rem;
     }
     .experience-sub-title {
       font-size: 1.25rem;
     }
     .logo {
       font-size: 1.5rem;
-    }
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
     }
     .pic-container {
       width: auto;

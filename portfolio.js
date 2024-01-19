@@ -1,11 +1,4 @@
-function Loader(){
-  const loader = document.querySelector(".loader");
 
-setTimeout(function(){
-  loader.style.top= "-100%"
-},3500)
-}
-Loader();
 
 function SCROLLBAR(){
   const scrollIndicator= document.querySelector(".scrollBar");
@@ -19,12 +12,23 @@ function scrollbars(){
 window.addEventListener("scroll",scrollbars);
 }
 SCROLLBAR();
-function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-  }
+const linksDiv = document.querySelector(".nav-links");
+const menu = document.querySelector("i");
+
+var flag = true;
+menu.addEventListener("click",()=>{
+    if(flag){
+        linksDiv.style.left= "0%";
+        menu.classList.remove("fa-bars");
+        menu.classList.add("fa-xmark");
+       
+    }else{
+        linksDiv.style.left = "-100%";
+        menu.classList.add("fa-bars");
+        menu.classList.remove("fa-xmark");
+    }
+    flag = !flag;
+})
 function MouseFollower(){
   const cursor = document.querySelector(".cursor");
 const body = document.querySelector("#main");
@@ -43,17 +47,10 @@ MouseFollower();
 // gsap
 gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline()
-tl.from(".loader h1",{
-  y:200,
-  stagger:.5,
-  opacity:0
-})
 tl.from("nav",{
   y:-100,
   opacity:0,
-  delay:2,
   duration:1,
-  stagger:0
 })
 tl.from(".Anime1",{
   x:-100,
