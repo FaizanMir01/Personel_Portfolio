@@ -108,8 +108,9 @@
     .nav-links li a {
       font-size: 1rem;
     }
-    .nav-links2 li a {
-      font-size: 1rem;
+    .nav-links2{
+     flex-direction: column;
+     align-items: center;
     }
     .experience-sub-title {
       font-size: 1.25rem;

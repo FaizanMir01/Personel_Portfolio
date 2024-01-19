@@ -1,4 +1,4 @@
-
+//Scroll Bar Indicator
 
 function SCROLLBAR(){
   const scrollIndicator= document.querySelector(".scrollBar");
@@ -12,6 +12,9 @@ function scrollbars(){
 window.addEventListener("scroll",scrollbars);
 }
 SCROLLBAR();
+
+// Responsuve Navbar
+
 const linksDiv = document.querySelector(".nav-links");
 const menu = document.querySelector("i");
 
@@ -29,6 +32,9 @@ menu.addEventListener("click",()=>{
     }
     flag = !flag;
 })
+
+// MOuseFollower
+
 function MouseFollower(){
   const cursor = document.querySelector(".cursor");
 const body = document.querySelector("#main");
