@@ -37,7 +37,7 @@ menu.addEventListener("click",()=>{
 
 function MouseFollower(){
   const cursor = document.querySelector(".cursor");
-const body = document.querySelector("#main");
+const body = document.querySelector("body");
 const logo = document.querySelector(".logo")
 
 body.addEventListener("mousemove",(dets)=>{
