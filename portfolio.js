@@ -33,25 +33,8 @@ menu.addEventListener("click",()=>{
     flag = !flag;
 })
 
-// MOuseFollower
-
-function MouseFollower(){
-  const cursor = document.querySelector(".cursor");
-const body = document.querySelector("#main");
-const logo = document.querySelector(".logo")
-
-body.addEventListener("mousemove",(dets)=>{
-  gsap.to(cursor,{
-    x:dets.x,
-    y:dets.y
-  })
-})
-
-}
-MouseFollower();
 
 // gsap
-gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline()
 tl.from("nav",{
   y:-100,
