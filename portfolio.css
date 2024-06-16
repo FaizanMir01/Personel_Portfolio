@@ -73,6 +73,10 @@ a:hover {
 .logo:hover {
   cursor: default;
 }
+
+.mobile-links{
+  display: none;
+}
 /* SECTIONS */
 
 section {
@@ -382,4 +386,3 @@ footer p {
   top: 0;
   z-index: 1;
 }
-

@@ -15,24 +15,31 @@ SCROLLBAR();
 
 // Responsuve Navbar
 
-const linksDiv = document.querySelector(".nav-links");
+function ResponsiveNavbar(){
+  const linksDiv = document.querySelector(".mobile-links");
 const menu = document.querySelector("i");
 
-var flag = true;
 menu.addEventListener("click",()=>{
-    if(flag){
-        linksDiv.style.left= "0%";
-        menu.classList.remove("fa-bars");
-        menu.classList.add("fa-xmark");
-       
-    }else{
-        linksDiv.style.left = "-100%";
-        menu.classList.add("fa-bars");
-        menu.classList.remove("fa-xmark");
-    }
-    flag = !flag;
-})
+  linksDiv.classList.toggle("mobile-nav")
+  menu.classList.toggle("fa-xmark")
 
+})
+}
+ResponsiveNavbar();
+
+
+//cursor
+
+const cursor = document.querySelector(".cursor");
+const body = document.querySelector("body");
+
+body.addEventListener("mousemove",(dets)=>{
+  gsap.to(cursor,{
+    x:dets.x,
+    y:dets.y
+
+  })
+})
 
 // gsap
 const tl = gsap.timeline()
