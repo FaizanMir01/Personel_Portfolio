@@ -41,6 +41,18 @@ body.addEventListener("mousemove",(dets)=>{
   })
 })
 
+
+//logo Effect
+
+const cursor2 = document.querySelector(".cursor");
+const logo = document.querySelector(".logo")
+logo.addEventListener("mouseenter",()=>{
+  cursor2.classList.add("big-cursor")
+})
+logo.addEventListener("mouseleave",()=>{
+  cursor2.classList.remove("big-cursor")
+})
+
 // gsap
 const tl = gsap.timeline()
 tl.from("nav",{
@@ -58,7 +70,7 @@ tl.from(".Anime2",{
   scale:0.5,
 })
 
-window.onload = function() {
+/* window.onload = function() {
   // Set the scroll position to the top of the page
   window.scrollTo(0, 0);
-};
+}; */
