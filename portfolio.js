@@ -47,11 +47,16 @@ body.addEventListener("mousemove",(dets)=>{
 const cursor2 = document.querySelector(".cursor");
 const logo = document.querySelector(".logo")
 logo.addEventListener("mouseenter",()=>{
-  cursor2.classList.add("big-cursor")
+  gsap.to(cursor2,{
+    scale:10
+  })
 })
 logo.addEventListener("mouseleave",()=>{
-  cursor2.classList.remove("big-cursor")
+  gsap.to(cursor2,{
+    scale:1
+  })
 })
+
 
 // gsap
 const tl = gsap.timeline()

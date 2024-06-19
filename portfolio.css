@@ -390,10 +390,6 @@ footer p {
   border-radius: 50%;
   position: fixed;
 }
-.big-cursor{
-  height: 70px;
-  width: 70px;
-}
 /* ScrollIndicator */
 .scrollBar{
   height: 5px;
